@@ -1,0 +1,68 @@
+version: "3.0"
+
+stories:
+
+- story: help_parth
+  steps:
+  - intent: ask_help
+  - action: utter_help
+
+- story: opening_account_parth
+  steps:
+  - intent: opening_account
+  - action: utter_opening_an_account
+
+- story: closing_account_parth
+  steps:
+  - intent: closing_account
+  - action: utter_closing_an_account  
+
+- story: asking_loans
+  steps:
+  - intent: taking_loans
+  - action: utter_about_loans
+  - intent: personal_loans
+  - action: utter_about_personal_loans
+  - intent: home_loans
+  - action: utter_about_home_loans
+  - intent: student_loans
+  - action: utter_about_student_loans
+  - intent: business_loans
+  - action: utter_about_business_loans  
+
+- story: ask_Investments
+  steps:
+  - intent: asking_Investments
+  - action: utter_Investments
+  - intent: about_Investments
+  - action: utter_about_investments
+
+- story: ask_credit_cards
+  steps:
+  - intent: about_Credit_Card
+  - action: utter_credit_card
+
+- story: ask_debit_cards
+  steps:
+  - intent: about_debit_Card
+  - action: utter_debit_card  
+
+- story: asking_Insurance
+  steps:
+  - intent: Insurance
+  - action: utter_insurance
+  - intent: Life_Insurance
+  - action: utter_life_insurance
+  - intent: Vehicle_Insurance
+  - action: utter_vehicle_insurance
+  - intent: Home_Insurance
+  - action: utter_home_insurance
+
+
+- story: exchange rate inquiry
+  steps:
+  - intent: ask_exchange_rate
+    entities:
+      - base_currency: "USD" 
+      - target_currency: "EUR"
+  - action: action_get_exchange_rate

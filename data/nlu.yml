@@ -1,0 +1,260 @@
+version: "3.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+
+- intent: ask_help
+  examples: |
+    - help
+    - උදව්
+    - ඔයාට පුලුවන්ද මට උදව් කරන්න?
+    - can you help me
+    - ඔයාට මොනවද කරන්න පුලුවන් දේවල්?  
+    - what can you do
+    - what can you do for me
+    - මම මොනවද කරන්න ඔන?
+    - can you lend me a hand
+    - I am stuck here
+
+- intent: opening_account
+  examples: |
+    - I need to open an account
+    - how can I open an account
+    - open account
+    - how can I open an account in your bank
+    - tell me how to open an account
+    - මට ගිණුමක් විවෘත කිරීමට අවශ්‍යයි
+    - මම ගිණුමක් විවෘත කරන්නේ කෙසේද?
+    - මම ඔබේ බැංකුවේ ගිණුමක් විවෘත කරන්නේ කෙසේද?
+    - ගිණුමක් විවෘත කරන්නේ කෙසේදැයි මට කියන්න
+
+- intent: closing_account
+  examples: |
+    - how can I close an account?
+    - I need to close an account
+    - close account
+    - account delete
+    - how can I close an account in your bank?
+    - මම ගිණුමක් වසා දැමිය හැක්කේ කෙසේද?
+    - මට ගිණුමක් වසා දැමීමට අවශ්‍යයි
+    - ගිණුමක් වසා දමන්නේ කෙසේදැයි මට කියන්න
+    - ඔබගේ බැංකුවේ ගිණුමක් වසා දැමිය හැක්කේ කෙසේද?
+
+
+- intent: taking_loans 
+  examples: |
+    - loans
+    - ණය
+    - I need to take a loan
+    - මට ණයක් ගන්න ඕන
+    - how can I take a loan?
+    - මම ණයක් ගන්නේ කෙසේද?
+    - tell me how can I take a loan
+    - ණයක් ගන්නේ කෙසේදැයි මට කියන්න
+
+
+- intent: personal_loans 
+  examples: |
+    - persanal loan
+    - පුද්ගලික ණය
+    - I need to take a persanal loan
+    - මට පුද්ගලික ණයක් ගන්න ඕන
+    - how can I take a persanal loan?
+    - මම පුද්ගලික ණයක් ගන්නේ කෙසේද?
+    - tell me how can I take a persanal loan
+    - පුද්ගලික ණයක් ගන්නේ කෙසේදැයි මට කියන්න
+
+- intent: home_loans 
+  examples: |
+    - home loan
+    - නිවාස ණය
+    - I need to take a home loan
+    - මට නිවාස ණයක් ගන්න ඕන
+    - how can I take a home loan?
+    - මම නිවාස ණයක් ගන්නේ කෙසේද?
+    - tell me how can I take a home loan
+    - නිවාස ණයක් ගන්නේ කෙසේදැයි මට කියන්න
+
+- intent: student_loans 
+  examples: |
+    - student loan
+    - ශිෂ්ය ණය
+    - I need to take a student loan
+    - මට ශිෂ්ය ණයක් ගන්න ඕන
+    - how can I take a student loan?
+    - මම ශිෂ්ය ණයක් ගන්නේ කෙසේද?
+    - tell me how can I take a student loan
+    - ශිෂ්ය ණයක් ගන්නේ කෙසේදැයි මට කියන්න
+
+- intent: business_loans 
+  examples: |
+    - business loans
+    - ව්යාපාරික ණය
+    - I need to take a business loan
+    - මට ව්යාපාරික ණයක් ගන්න ඕන
+    - how can I take a business loan?
+    - මම ව්යාපාරික ණයක් ගන්නේ කෙසේද?
+    - tell me how can I take a business loan
+    - ව්යාපාරික ණයක් ගන්නේ කෙසේදැයි මට කියන්න
+
+- intent: asking_Investments 
+  examples: |
+    - Investments
+    - ආයෝජන
+    - what are the investments that you offers
+    - ඔබ ඉදිරිපත් කරන ආයෝජන මොනවාද?
+    - I want to make a investment 
+    - මට ආයෝජනයක් කරන්න ඕන
+
+- intent: about_Investments 
+  examples: |
+    - Investments info
+    - ආයෝජන තොරතුරු
+    - can I have more information about investments?
+    - මට ආයෝජන ගැන වැඩි විස්තර ලබා ගත හැකිද?
+    - how can I make an investment
+    - මම කොහොමද ආයෝජනයක් කරන්නේ 
+
+- intent: about_Credit_Card 
+  examples: |
+    - credit cards
+    - ණයපත්
+    - ක්රෙඩිට් කාඩ්පත්
+    - how can I get a credit card
+    - මම කොහොමද ක්‍රෙඩිට් කාඩ් එකක් ගන්නේ
+    - I want a credit card
+    - මට ක්‍රෙඩිට් කාඩ් එකක් ඕන  
+
+- intent: about_debit_Card 
+  examples: |
+    - debit cards
+    - හරපත්
+    - ඩෙබිට් කාඩ්පත්
+    - how can I get a debit card
+    - මම කොහොමද ඩෙබිට් කාඩ් එකක් ගන්නේ
+    - I want a debit card
+    - මට ඩෙබිට් කාඩ් එකක් ඕන  
+
+- intent: Insurance 
+  examples: |
+    - Insurance
+    - රක්ෂණ
+    - I need to get an Insurance
+    - මට ඉන්ෂුවරන්ස් එකක් ගන්න ඕන
+    - මට රක්ෂණයක් ගන්න ඕන
+    - what are the Insurance that you provide
+    - ඔබ සපයන රක්ෂණ මොනවාද?
+
+- intent: Life_Insurance 
+  examples: |
+    - Life Insurance
+    - ජිවිත රක්ෂණය
+    - I need to get a Life Insurance
+    - මට ජිවිත රක්ෂණයක් ගන්න ඕන
+    - how can I get a Life Insurance
+    - මම කොහොමද ජිවිත රක්ෂණයක් ලබා ගන්නේ
+
+- intent: Vehicle_Insurance 
+  examples: |
+    - Vehicle Insurance
+    - වාහන රක්ෂණය
+    - I need to get a Vehicle Insurance
+    - මට වාහන රක්ෂණයක් ගන්න ඕන
+    - how can I get a Vehicle Insurance
+    - මම කොහොමද වාහන රක්ෂණයක් ලබා ගන්නේ
+
+- intent: Home_Insurance 
+  examples: |
+    - Home Insurance
+    - නිවාස රක්ෂණය
+    - I need to get a Home Insurance
+    - මට නිවාස රක්ෂණයක් ගන්න ඕන
+    - how can I get a Home Insurance
+    - මම කොහොමද නිවාස රක්ෂණයක් ලබා ගන්නේ
+
+- intent: ask_exchange_rate
+  examples: |
+    - What is the exchange rate from [USD](base_currency) to [EUR](target_currency)?
+    - How much is [GBP](base_currency) to [JPY](target_currency)?
+    - Convert [AUD](base_currency) to [CAD](target_currency)
